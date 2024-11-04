@@ -27,6 +27,7 @@ modules:
        - evince
        - simple-scan
        - i3status
+       - papirus-icon-theme-dark
     remove:
        - firefox
        - firefox-langpacks
