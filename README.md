@@ -1,8 +1,6 @@
 # dragoncheese-os &nbsp; [![bluebuild build badge](https://github.com/dragoncheeze/dragoncheese-os/actions/workflows/build.yml/badge.svg)](https://github.com/dragoncheeze/dragoncheese-os/actions/workflows/build.yml)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
-
-After setup, it is recommended you update this README to describe your custom image.
+This is a simple Sway Atomic image using [BlueBuild docs](https://blue-build.org/how-to/setup/). Just a few tweaks made to the default Fedora Sericea image.
 
 ## Installation
 
