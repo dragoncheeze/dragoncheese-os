@@ -8,8 +8,8 @@ font pango:monospace 16
 #
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
-exec lxpolkit
-exec_always autotiling
+exec /usr/libexec/lxqt-policykit-agent
+exec_always /etc/sway/autotiling
 # Home row direction keys, like vim
 set $left h
 set $down j
@@ -21,7 +21,7 @@ set $term foot
 set $menu rofi -show drun -show-icons
 
 ### Output configuration
-output * bg /usr/share/backgrounds/outrun.jpg fill mode 1920x1080@75Hz
+output * bg /usr/share/backgrounds/outrun.jpg fill mode 1920x1080@75Hz max_render_time 5
 
 # Example configuration:
 #
@@ -63,8 +63,8 @@ output * bg /usr/share/backgrounds/outrun.jpg fill mode 1920x1080@75Hz
     # Start a terminal
     bindsym $mod+Return exec $term
     bindsym $mod+n exec thunar
-    bindsym $mod+g exec lutris
-    bindsym $mod+b exec brave
+    bindsym $mod+g exec flatpak run net.lutris.Lutris
+    bindsym $mod+b exec flatpak run com.brave.Browser
     # Kill focused window
     bindsym $mod+x kill
 
@@ -218,4 +218,4 @@ default_floating_border pixel 5
 gaps inner 10
 gaps outer 0
 
-include ~/.config/sway/conf.d/*
+include /etc/sway/conf.d/*
