@@ -12,6 +12,7 @@ Just a few tweaks made to the default Fedora Sericea image.
 
 > **Warning**  
 > [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
+> 
 > my monitor config is used in the default sway config and may not work on your system. use custom config in ~/.config/sway/config or edit /etc/sway/config to match your outputs.
 
 To rebase an existing atomic Fedora installation to the latest build:
