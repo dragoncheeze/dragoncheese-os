@@ -17,7 +17,7 @@ set $up k
 set $right l
 
 # Variables
-set $term foot
+set $term foot -e fish
 set $menu rofi -show drun -show-icons
 
 ### Output configuration
