@@ -1,6 +1,6 @@
 # dragoncheese-os &nbsp; [![bluebuild build badge](https://github.com/dragoncheeze/dragoncheese-os/actions/workflows/build.yml/badge.svg)](https://github.com/dragoncheeze/dragoncheese-os/actions/workflows/build.yml)
 
-This is a simple Sway Atomic image using [BlueBuild docs](https://blue-build.org/how-to/setup/). 
+This is a simple Sway Atomic image using [BlueBuild docs](https://blue-build.org/how-to/setup/).
 Just a few tweaks made to the default Fedora Sericea image.
  - removed firefox and added brave as flatpak
  - added lutris as flatpak
@@ -10,10 +10,9 @@ Just a few tweaks made to the default Fedora Sericea image.
 
 ## Installation
 
-> **Warning**  
+> **Warning**
 > [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
-> 
-> my monitor config is used in the default sway config and may not work on your system. use custom config in ~/.config/sway/config or edit /etc/sway/config to match your outputs.
+>
 
 To rebase an existing atomic Fedora installation to the latest build:
 

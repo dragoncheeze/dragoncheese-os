@@ -21,7 +21,7 @@ set $term foot -e fish
 set $menu rofi -show drun -show-icons
 
 ### Output configuration
-output * bg /usr/share/backgrounds/outrun.jpg fill mode 1920x1080@75Hz max_render_time 5
+output * bg /usr/share/backgrounds/outrun.jpg fill
 
 # Example configuration:
 #
