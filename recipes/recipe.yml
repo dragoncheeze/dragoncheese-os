@@ -3,7 +3,7 @@ name: dragoncheese-os
 description: This is an Atmomic Sway based on Fedora Sericea with some tweaks.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: quay.io/fedora-ostree-desktops/sericea
+base-image: ghcr.io/ublue-os/sericea-main
 image-version: 41
 
 # module configuration, executed in order
@@ -21,7 +21,6 @@ modules:
        - fish
        - neovim
        - geany
-       - distrobox
        - fastfetch
        - galculator
        - evince
