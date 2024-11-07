@@ -10,20 +10,16 @@ Just a few tweaks made to the default Ublue-os Fedora Sericea image.
 
 ## Installation
 
-> **Warning**
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
->
-
 To rebase an existing atomic Fedora installation to the latest build:
 
 > **NOTE**
 >
 > Use dragoncheese-os for AMD gpu
 >
-> dragoncheese-nvidia for NVIDIA gpu
+> Use dragoncheese-nvidia for NVIDIA gpu
 
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
+- **First** rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
   rpm-ostree rebase ostree-unverified-registry:ghcr.io/dragoncheeze/dragoncheese-os:latest
   ```
@@ -31,7 +27,7 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
   systemctl reboot
   ```
-- Then rebase to the signed image, like so:
+- **Then** rebase to the signed image (this is not optional):
   ```
   rpm-ostree rebase ostree-image-signed:docker://ghcr.io/dragoncheeze/dragoncheese-os:latest
   ```
