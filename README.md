@@ -2,8 +2,8 @@
 
 This is a simple Sway Atomic image using [BlueBuild docs](https://blue-build.org/how-to/setup/).
 Just a few tweaks made to the default Ublue-os Fedora Sericea image.
- - removed firefox and added brave as flatpak
- - added lutris as flatpak
+ - using Brave as default browser
+ - added Lutris as flatpak
  - distrobox, neovim, fish, and other default apps installed.
  - custom minimal configuration for sway
 
