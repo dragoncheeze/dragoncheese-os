@@ -16,8 +16,9 @@ modules:
 
   - type: rpm-ostree
     repos:
-      # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+       - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
     install:
+       - brave-browser
        - fish
        - neovim
        - geany
@@ -27,6 +28,7 @@ modules:
        - simple-scan
        - i3status
        - papirus-icon-theme-dark
+       - lxappearance
     remove:
        - firefox
        - firefox-langpacks
@@ -38,7 +40,6 @@ modules:
        repo-name: flathub
       # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
        install:
-         - com.brave.Browser
          - net.lutris.Lutris
          - it.mijorus.gearlever
        remove:
