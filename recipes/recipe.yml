@@ -27,8 +27,6 @@ modules:
        - simple-scan
        - i3status
        - papirus-icon-theme-dark
-       - lxappearance
-       - gnome-themes-extra
     remove:
        - firefox
        - firefox-langpacks
