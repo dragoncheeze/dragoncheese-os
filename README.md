@@ -17,7 +17,8 @@ Just a few tweaks made to the default Ublue-os Fedora Sericea image.
 To rebase an existing atomic Fedora installation to the latest build:
 
 > **NOTE**
-> Use dragoncheese-os for AMD gpu 
+> Use dragoncheese-os for AMD gpu
+>
 > dragoncheese-nvidia for NVIDIA gpu
 
 
