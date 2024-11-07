@@ -1,7 +1,7 @@
 # dragoncheese-os &nbsp; [![bluebuild build badge](https://github.com/dragoncheeze/dragoncheese-os/actions/workflows/build.yml/badge.svg)](https://github.com/dragoncheeze/dragoncheese-os/actions/workflows/build.yml)
 
 This is a simple Sway Atomic image using [BlueBuild docs](https://blue-build.org/how-to/setup/).
-Just a few tweaks made to the default Ublus-os Fedora Sericea image.
+Just a few tweaks made to the default Ublue-os Fedora Sericea image.
  - removed firefox and added brave as flatpak
  - added lutris as flatpak
  - distrobox, neovim, fish, and other default apps installed.
