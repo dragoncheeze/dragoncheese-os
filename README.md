@@ -16,6 +16,11 @@ Just a few tweaks made to the default Ublue-os Fedora Sericea image.
 
 To rebase an existing atomic Fedora installation to the latest build:
 
+> **NOTE**
+> Use dragoncheese-os for AMD gpu 
+> dragoncheese-nvidia for NVIDIA gpu
+
+
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
   rpm-ostree rebase ostree-unverified-registry:ghcr.io/dragoncheeze/dragoncheese-os:latest

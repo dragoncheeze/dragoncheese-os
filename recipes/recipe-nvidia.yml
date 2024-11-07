@@ -1,0 +1,47 @@
+# image will be published to ghcr.io/<user>/<name>
+name: dragoncheese-nvidia
+description: This is an Atmomic Sway based on Fedora Sericea with some tweaks.
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/ublue-os/sericea-nvidia
+image-version: 41
+
+# module configuration, executed in order
+# you can include multiple instances of the same module
+modules:
+  - type: files
+    files:
+      - source: system
+        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+
+  - type: rpm-ostree
+    repos:
+       # - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+    install:
+       - fish
+       - neovim
+       - geany
+       - fastfetch
+       - galculator
+       - evince
+       - simple-scan
+       - i3status
+       - papirus-icon-theme-dark
+    remove:
+       - firefox
+       - firefox-langpacks
+
+  - type: default-flatpaks
+    notify: true # Send notification after install/uninstall is finished (true/false)
+    system:
+       repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+       repo-name: flathub
+      # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
+       install:
+         - com.brave.Browser
+         - net.lutris.Lutris
+         - it.mijorus.gearlever
+       remove:
+      # - org.gnome.eog
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully
+
