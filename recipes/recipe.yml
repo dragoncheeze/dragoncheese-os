@@ -16,11 +16,8 @@ modules:
 
   - type: rpm-ostree
     repos:
-       - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
-    keys:
-       - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+       # - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
     install:
-       - brave-browser
        - fish
        - neovim
        - geany
@@ -31,6 +28,7 @@ modules:
        - i3status
        - papirus-icon-theme-dark
        - lxappearance
+       - gnome-themes-extra
     remove:
        - firefox
        - firefox-langpacks
@@ -42,6 +40,7 @@ modules:
        repo-name: flathub
       # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
        install:
+         - com.brave.Browser
          - net.lutris.Lutris
          - it.mijorus.gearlever
        remove:
