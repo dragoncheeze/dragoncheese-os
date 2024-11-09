@@ -27,6 +27,7 @@ modules:
        - simple-scan
        - i3status
        - papirus-icon-theme-dark
+       - hyprland
     remove:
        - firefox
        - firefox-langpacks
