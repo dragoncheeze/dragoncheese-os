@@ -31,9 +31,9 @@ To rebase an existing atomic Fedora installation to the latest build:
 - **Then** rebase to the signed image (this is not optional):
   ```
   rpm-ostree rebase ostree-image-signed:docker://ghcr.io/dragoncheeze/dragoncheese-os:latest
-=======
-  ```
+  
 - Reboot again to complete the installation
+  
   ```
   systemctl reboot
   ```
