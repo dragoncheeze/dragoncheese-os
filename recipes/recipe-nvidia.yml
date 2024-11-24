@@ -1,13 +1,7 @@
-# image will be published to ghcr.io/<user>/<name>
 name: dragoncheese-nvidia
 description: This is an Atmomic Sway based on Fedora Sericea with some tweaks.
-
-# the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/sericea-nvidia
 image-version: 41
-
-# module configuration, executed in order
-# you can include multiple instances of the same module
 modules:
   - type: files
     files:
