@@ -1,5 +1,5 @@
 name: gnome
-description: This is an Atmomic Sway based on Fedora Sericea with some tweaks.
+description: This is an atomic Gnome build using some minor tweaks.
 base-image: ghcr.io/ublue-os/silverblue-main
 image-version: 41
 modules:
