@@ -15,9 +15,13 @@ To rebase an existing atomic Fedora installation to the latest build:
 > Available Images:
 >
 > sway
+>
 > sway-nvidia
+>
 > gnome
+>
 > gnome-nvidia
+>
 
 
 - **First** rebase to the unsigned image, to get the proper signing keys and policies installed:
