@@ -1,4 +1,4 @@
-name: gnome
+name: gnome-nvidia
 description: This is an atomic Gnome image using some minor tweaks with included Nvidia drivers.
 base-image: ghcr.io/ublue-os/silverblue-nvidia
 image-version: 41
