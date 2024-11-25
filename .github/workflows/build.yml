@@ -22,8 +22,10 @@ jobs:
       matrix:
         recipe:
           # !! Add your recipes here 
-          - recipe.yml
-          - recipe-nvidia.yml
+          - sway.yml
+          - sway-nvidia.yml
+          - gnome.yml
+          - gnome-nvidia.yml
     steps:
        # the build is fully handled by the reusable github action
       - name: Build Custom Image

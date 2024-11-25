@@ -1,27 +1,28 @@
 # dragoncheese-os &nbsp; [![bluebuild build badge](https://github.com/dragoncheeze/dragoncheese-os/actions/workflows/build.yml/badge.svg)](https://github.com/dragoncheeze/dragoncheese-os/actions/workflows/build.yml)
 
-This is a simple Sway Atomic image using [BlueBuild docs](https://blue-build.org/how-to/setup/).
-Just a few tweaks made to the default Ublue-os Fedora Sericea image.
+This is a simple Atomic imageis using [BlueBuild docs](https://blue-build.org/how-to/setup/).
+Just a few tweaks made to the default Universal Blue images.
  - using Brave as default browser
  - added Lutris as flatpak
  - distrobox, neovim, fish, and other default apps installed.
- - custom minimal configuration for sway
+ - custom minimal configuration for the sway image
 
 
 ## Installation
 
 To rebase an existing atomic Fedora installation to the latest build:
 
-> **NOTE**
+> Available Images:
 >
-> Use dragoncheese-os for AMD gpu
->
-> Use dragoncheese-nvidia for NVIDIA gpu
+> sway
+> sway-nvidia
+> gnome
+> gnome-nvidia
 
 
 - **First** rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/dragoncheeze/dragoncheese-os:latest
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/dragoncheeze/sway:latest
 
   ```
 - Reboot to complete the rebase:
@@ -30,7 +31,7 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
 - **Then** rebase to the signed image (this is not optional):
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/dragoncheeze/dragoncheese-os:latest
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/dragoncheeze/sway:latest
   
 - Reboot again to complete the installation
   
