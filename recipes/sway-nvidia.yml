@@ -21,6 +21,9 @@ modules:
        - simple-scan
        - i3status
        - papirus-icon-theme-dark
+       - seahorse
+       - gnome-keyring
+       - gnome-keyring-pam
     remove:
        - firefox
        - firefox-langpacks
