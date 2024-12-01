@@ -19,6 +19,8 @@ modules:
        - simple-scan
        - papirus-icon-theme-dark
        - google-roboto-fonts
+       - wine
+       - lutris
     remove:
        - firefox
        - firefox-langpacks
@@ -29,7 +31,6 @@ modules:
        repo-name: flathub
        install:
          - com.brave.Browser
-         - net.lutris.Lutris
          - it.mijorus.gearlever
        remove:
          - org.gnome.Evince
