@@ -21,6 +21,7 @@ modules:
        - simple-scan
        - i3status
        - papirus-icon-theme-dark
+       - wine
     remove:
        - firefox
        - firefox-langpacks
