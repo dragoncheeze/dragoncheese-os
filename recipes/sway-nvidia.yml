@@ -21,14 +21,8 @@ modules:
        - simple-scan
        - i3status
        - papirus-icon-theme-dark
-<<<<<<< HEAD
        - wine
        - lutris
-=======
-       - seahorse
-       - gnome-keyring
-       - gnome-keyring-pam
->>>>>>> origin/main
     remove:
        - firefox
        - firefox-langpacks
