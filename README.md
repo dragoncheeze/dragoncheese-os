@@ -3,7 +3,7 @@
 These are simple Fedora Atomic images using [BlueBuild docs](https://blue-build.org/how-to/setup/).
 Just a few tweaks made to the default [Universal Blue](https://universal-blue.org) images.
  - using Brave as default browser
- - added Lutris as flatpak
+ - added Lutris and Wine
  - distrobox, neovim, fish, and other default apps installed.
  - custom minimal configuration for the sway image
 
@@ -17,11 +17,7 @@ Install any official Fedora Atomic image (recommend using sway) then rebase to o
 > sway
 >
 > sway-nvidia
->
-> gnome
->
-> gnome-nvidia
->
+
 
 
 - **First** rebase to the unsigned image, to get the proper signing keys and policies installed:
