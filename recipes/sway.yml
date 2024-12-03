@@ -21,8 +21,14 @@ modules:
        - i3status
        - papirus-icon-theme-dark
        - google-roboto-fonts
+<<<<<<< HEAD
        - wine
        - lutris
+=======
+       - evince
+       - gnome-keyring
+       - gnome-keyring-pam
+>>>>>>> origin/main
     remove:
        - firefox
        - firefox-langpacks
