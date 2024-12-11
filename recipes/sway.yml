@@ -21,7 +21,6 @@ modules:
        - i3status
        - papirus-icon-theme-dark
        - google-roboto-fonts
-       - wine
     remove:
        - firefox
        - firefox-langpacks
